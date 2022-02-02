@@ -29,6 +29,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - run: git config --global user.name "spiralspree"
+    - run: git config --global user.email "spiralspree@gmail.com"
     - run: git checkout master
     - run: git merge development
     - run: git push origin master
