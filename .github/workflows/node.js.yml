@@ -31,6 +31,7 @@ jobs:
     - run: npm test
     - run: git config --global user.name "spiralspree"
     - run: git config --global user.email "spiralspree@gmail.com"
+    - run: git fetch
     - run: git checkout master
     - run: git merge development
     - run: git push origin master
