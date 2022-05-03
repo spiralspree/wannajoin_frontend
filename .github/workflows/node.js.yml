@@ -34,4 +34,4 @@ jobs:
     - run: git fetch --unshallow
     - run: git checkout master
     - run: git merge development
-    - run: git push origin master --force
+    - run: git push origin master
