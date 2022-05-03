@@ -33,6 +33,5 @@ jobs:
     - run: git config --global user.email "spiralspree@gmail.com"
     - run: git fetch --unshallow
     - run: git checkout master
-    - run: git reset --hard f29aeb4
     - run: git merge development
     - run: git push origin master --force
