@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
 export default function Button() {
   const [buttonText, setButtonText] = useState("Button")
@@ -11,7 +11,7 @@ export default function Button() {
       setButtonText(response.data)}
     )
   }
-  
+
   return (
     <div onClick={fetchFromBackend}>{buttonText}</div>
   )
